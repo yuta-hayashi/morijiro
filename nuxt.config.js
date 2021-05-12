@@ -43,5 +43,10 @@ export default {
 
   // Build Configuration: https://go.nuxtjs.dev/config-build
   build: {
-  }
+  },
+  // Expressを動かす
+  serverMiddleware: [
+    // /server-middleware/* を処理するために、プロジェクトの server-middleware ディレクトリからファイルを登録
+    { path: '/server', handler: '~/server/index.js' },
+  ]
 }
