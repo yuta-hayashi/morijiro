@@ -39,10 +39,9 @@ export default {
     this.socket = io(":81", {
       transports: ["websocket", "polling", "flashsocket"]
     });
-    this.socket.on("new-msg", msg => {
-      this.msgs.push(msg);
-      console.log(msg);
-    });
+    // this.socket.on("new-msg", msg => {
+    //   console.log(msg);
+    // });
   },
   methods: {
     send(code) {
