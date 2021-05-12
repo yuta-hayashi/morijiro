@@ -36,7 +36,7 @@ export default {
     };
   },
   mounted() {
-    this.socket = io(":3001", {
+    this.socket = io(":81", {
       transports: ["websocket", "polling", "flashsocket"]
     });
     this.socket.on("new-msg", msg => {

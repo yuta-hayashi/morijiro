@@ -1,4 +1,7 @@
 export default {
+  server: {
+    port: 80 // デフォルト: 3000
+  },
   // Global page headers: https://go.nuxtjs.dev/config-head
   head: {
     title: 'morijiro',
