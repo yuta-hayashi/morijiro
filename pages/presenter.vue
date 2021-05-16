@@ -1,6 +1,7 @@
 <template>
   <section class="section">
     <h1>プレゼンター画面</h1>
+    <vs-button @click="playSound('don')">音を出す！</vs-button>
     <div class="reactionList">
       <p v-for="(code, index) in reactions" :key="index">{{ code }}</p>
     </div>
